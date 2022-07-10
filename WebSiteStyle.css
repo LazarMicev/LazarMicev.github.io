@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins' sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before, ::after{
+    box-sizing: border-box;
+}
+.home_section{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+}
+.header{
+    width: 270px;
+    background:var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--bg-black-50);
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.main{
+    padding-left: 270px;
+}
+
+.header .logo{
+    position: absolute;
+    top:50px;
+    font-size:30px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.header .logo a{
+    color: var(--text-black-700);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.header .logo a span{
+    font-family: 'Clicker Script', cursive;
+    font-size: 40px;
+}
+
+.header .logo a::before{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    bottom: 0;
+    left: 0;
+}
+.header .logo a::after{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid red;
+    border-right: 5px ridge red;
+    top: 1px;
+    right: 2px;
+}
+.header .nav{
+    margin-top: 0;
+}
+.header .nav li{
+    margin-bottom: 20px;
+    display: block;
+}
+.header .nav li a{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+.container .header .nav li a.active{
+    color: red;
+}
+.header .nav li a i{
+    margin-right: 15px;
+}
+
+.container_main{
+    max-width: 1100;
+    width: 100%;
+    margin-top: 16%;
+    padding-left: 60px;
+}
+.pad-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*home */
+.home{
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+    background: var(--bg-black-50);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: -15px;
+    position: relative;
+}
+.main .home-img img{
+    height: 400px;
+    margin: auto;
+    border-radius: 5px;
+    border: 10px outset var(--bg-black-900);
+}
+.main .row .home-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+.main .row .home-img{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+h3.hello{
+    font-size: 32px;
+    margin: 15px 0;
+}
+h3.hello span{
+    font-size: 35px;
+    font-weight: 700;
+    color: red;
+}
+h3.about_me{
+    font-size: 35px;
+    margin: 15px 0;
+}
+h3.about_me span{
+    color: red;
+}
+.home-info p{
+    margin-bottom: 70px;
+    font-size: 24px;
+    color: var(--text-black-700);
+}
+.btn{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    background: red;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.10);
+}
+
+.container_about .header ul .about{
+    color: red;
+}
+.container_about .container{
+    padding-left: 270px;
+}
+.container_contact .header ul .contact{
+    color: red;
+}
+.container_contact .container{
+    padding-left: 295px;
+    padding-top: 150px;
+}
+
+.container_contact input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container_contact input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container_contact input[type=submit]:hover {
+    background-color: var(--bg-black-100);
+}
+
+.container_about .container {
+    border-radius: 5px;
+    background-color: var(--bg-black-900);
+    padding: 20px;
+}
+
+.container_contact .container{
+    height: 2000px;
+    background: var(--bg-black-50);
+    padding-right: 25px;
+}
+.container_contact .container h3{
+    position: center;
+    font-size: 33px;
+    margin: auto;
+    padding-left: 47%;
+}
+.container_education .header ul .education{
+    color: red;
+}
+.container_education .container{
+    padding-left: 295px;
+    padding-top: 150px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 28%;
+    margin: 4%;
+    text-align: center;
+    font-size: 20px;
+}
+.flex-container img{
+    width: 100%;
+    height: 70%;
+}
+.row1 h1{
+    text-align: center;
+    color: var(--text-black-700);
+    font-weight: 900;
+    font-size: 35px;
+}
+.sch{
+    height: 30%;
+}
+
+.social-footer {
+    padding: 1rem;
+    background: lightgrey;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+}
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 15px;
+}
+.menu li{
+    width: 28%;
+    margin-right: 5px;
+}
+.container_about li{
+    list-style: circle;
+    font-size: 20px;
+}
+.row_about{
+    display: flex;
+}
+.container_about .row_about .home-info{
+    flex: 20%;
+}
+.row_about .home-img{
+    flex: 50%;
+    width: 70%;
+}
+.row_about .home-intrest{
+    flex: 20%;
+}
+.row_about h3{
+    font-size: 40px;
+    margin: 10px;
+}
+#AboutH{
+    padding-top: 20px;
+}
+.row1{
+   margin-top: -150px;
+}
